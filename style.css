@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url("images/bg.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .ingredients {
+    width: 250px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .ingredients h2 {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+  }
+  
+  .ingredient {
+    width: 80px;
+    margin: 8px;
+    cursor: grab;
+  }
+  
+  .shawarma-zone {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px dashed #fff;
+    border-radius: 20px;
+    padding-top: 20px;
+  }
+  
+  #stack-area {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  #stack-area img {
+    width: 100px;
+    margin: 5px 0;
+  }
+  
+  .buttons {
+    margin: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #ffcc70;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Build Your Own Shawarma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌯 Build Your Own Shawarma</h1>
+
+  <div class="container">
+    <!-- Ingredient Selection -->
+    <div class="ingredients">
+      <h2>Base</h2>
+      <img src="images/pita.png" class="ingredient" draggable="true" data-type="base" data-name="Pita">
+      <img src="images/tortilla.png" class="ingredient" draggable="true" data-type="base" data-name="Tortilla">
+
+      <h2>Meat</h2>
+      <img src="images/beef.png" class="ingredient" draggable="true" data-type="meat" data-name="Beef">
+      <img src="images/chicken.png" class="ingredient" draggable="true" data-type="meat" data-name="Chicken">
+      <img src="images/pork.png" class="ingredient" draggable="true" data-type="meat" data-name="Pork">
+      <img src="images/tuna.png" class="ingredient" draggable="true" data-type="meat" data-name="Tuna">
+
+      <h2>Veggies</h2>
+      <img src="images/onion.png" class="ingredient" draggable="true" data-type="veggie" data-name="Onion">
+      <img src="images/lettuce.png" class="ingredient" draggable="true" data-type="veggie" data-name="Lettuce">
+
+      <h2>Dressing</h2>
+      <img src="images/mayo.png" class="ingredient" draggable="true" data-type="sauce" data-name="Mayo">
+      <img src="images/mustard.png" class="ingredient" draggable="true" data-type="sauce" data-name="Mustard">
+    </div>
+
+    <!-- Shawarma Zone -->
+    <div class="shawarma-zone" ondragover="allowDrop(event)" ondrop="dropIngredient(event)">
+      <div id="stack-area"></div>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="wrapShawarma()">Wrap It!</button>
+    <button onclick="resetShawarma()">Reset</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

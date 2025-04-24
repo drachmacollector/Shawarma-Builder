@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Shawarma</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .shawarma-view {
+      text-align: center;
+      padding: 3rem;
+    }
+    .shawarma-img {
+      width: 250px;
+      animation: pulse 2s infinite alternate;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); filter: brightness(1); }
+      100% { transform: scale(1.05); filter: brightness(1.3); }
+    }
+  </style>
+</head>
+<body>
+  <div class="shawarma-view">
+    <h1>🌯 Your Shawarma Is Ready!</h1>
+    <img src="images/wrapped-shawarma.png" class="shawarma-img" alt=\"Shawarma\" />
+    <h2>Ingredients:</h2>
+    <ul id="summary"></ul>
+    <br />
+    <button onclick="window.location.href='index.html'">Build Another</button>
+  </div>
+
+  <script src="wrap.js"></script>
+</body>
+</html>
